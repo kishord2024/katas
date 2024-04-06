@@ -1,0 +1,24 @@
+FishWatch :
+
+Abstract :
+	The FishWatch is present an automated IoT and AI based system to improve fish farming.The proposed system uses multiple sensors
+to measure in real time water quality chemical parameters such as: temperature, salinity, oxygen levels  etc., from the fish enclosure and then send them on a cloud
+database to allow fish farmers to access them in real time with their devices (mobile phone, PC, tablets).
+
+The System Consists of Web Application which fish farmers cna use. The web applicaiton enable farmers with real time visualizations of sensors data, issues
+alerts , real time carmera streaming and  raw data being collected should be used to build a model(AI Model) of what factors produce good harvests.
+
+
+KeyWords : IoT , AI ,Machine Learing,Embedded System , web Application , Event Bus (Kafka) , Image Processing
+
+System Consists Of Four Module :
+1. Real Time Water Quality & weather Management
+2. Live Data Motoring
+3. Alers Management & Configuration
+4. Image Processing (parasites & fish activity)
+
+
+SoftWare Implementation:
+
+Web API were used to acquire and process sensors data. The data received from sensors is transmitted to a MongoDb database in the cloud, also to Google Big Data Platform and kafka broker. This enables advanced users (researchers and IT experts) to access, visualize and analyze the collected sensors data from our account on “Big Data platform”. The Fish farmer can receive real time water quality data and alerts on his/her phone from the web platform. We used web technologies such as HTML, CSS, JavaScript, Angular , JQuery, and Mongo to create the web platform which provides fish farmers with data, graphical visualizations, issues detection, alerting. 
+For the fish PeraSitas detection we used Python Programming (Python 3.21) with TensorFlow 2.3.1 and Keras Libraries to write and deploy our machine learning model which is based on Convolution Neural Network.
